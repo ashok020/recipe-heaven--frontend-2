@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+# Recipe Heaven Webapp Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is the frontend implementation of the Recipe Heaven web application. It provides web interface fot user authentication, user registration, fetching recipe data,editing and saving user-created recipes, and generating recipes using Chat GPT.
 
-## Available Scripts
+Created for Ecowiser FSD Task.
 
-In the project directory, you can run:
+### [Live Deployed Link](https://rainbow-brigadeiros-7f3100.netlify.app/)
 
-### `npm start`
+### [Backend Repo Link](https://github.com/ashok020/recipe-heaven-backend)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### [Backend Deployed Link](https://breakable-plum-dalmatian.cyclic.app)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## My Process
 
-### `npm test`
+- Designed the basic plan of how my folder structure will look and what necessary files should be in React.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Defined Folder Structure:
 
-### `npm run build`
+- `components/`: Reusable componets like : NavBar, DropDown, Comment Section,Search Field,UserIcon etc
+- `pages/`: Store all website pages for react router like : Login,Register,EditRecipePage,RecipeDetails,Home,MyRecipes,GenerateRecipes,Profile,LikedRecipes,
+- `utils/`: Some utilty js files like API (Axios instance with header with bearear token set), ImageToBase64, etc
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Features
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- User SignUp / SingIn
+- save user using `JWT tokens` and `localStarage`
+- Create New Recipe
+- Generate recipe with ingredients or recipe title Using `Chat GPT`
+- Edit, Delete Recipes
+- Search Recipes
+- Like and comments on a recipes
+- Post Recipes as Publicly or Privately
+- User Info Updatation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Tech Stack
 
-### `npm run eject`
+- JavaScript
+- React JS
+- React Router
+- Context API and hooks
+- Vite
+- Axios
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Screenshots
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Home Page
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- ![Screenshot](https://github.com/ashok020/recipe-heaven-frontend/blob/main/screenshots/home%20page.png?raw=true)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Recipe Generate using Chat GPT
 
-## Learn More
+- ![Screenshot](https://github.com/ashok020/recipe-heaven-frontend/blob/main/screenshots/generate.png?raw=true)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Recipe Search
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- ![Screenshot](https://github.com/ashok020/recipe-heaven-frontend/blob/main/screenshots/search.png)
 
-### Code Splitting
+- Recipe Edit
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- ![Screenshot](https://github.com/ashok020/recipe-heaven-frontend/blob/main/screenshots/edit2.png?raw=true)
 
-### Analyzing the Bundle Size
+- Recipe View
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- ![Screenshot](https://github.com/ashok020/recipe-heaven-frontend/blob/main/screenshots/view.png?raw=true)
 
-### Making a Progressive Web App
+-Profile Page
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- ![Screenshot](https://github.com/ashok020/recipe-heaven-frontend/blob/main/screenshots/profile.png)
